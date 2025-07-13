@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "56c320da-e67b-4acf-aa64-c074ace5ed5a",
+		"name": "file sharing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43116400"
+	},
+	"item": [
+		{
+			"name": "ops login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"admin\",\r\n  \"password\": \"admin123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/ops/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"ops",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ops upload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc1MjQ0MTcyNSwianRpIjoiYzkxNDc3NGEtM2RjNi00N2I5LThjYmEtOTJlMThhYjJkZjU0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NTI0NDE3MjUsImNzcmYiOiIwYTdjNjNmNy01NGFjLTRhYzEtOGE5NC1jN2IxYWRmNWQ3YzMiLCJleHAiOjE3NTI0NDUzMjV9.KT44vE9gA8km0gi3DHXzYmPEZGLnj1HxvyHvcibN57Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/sbspa/Desktop/test.docx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/ops/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"ops",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "client signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc1MjQ0MTcyNSwianRpIjoiYzkxNDc3NGEtM2RjNi00N2I5LThjYmEtOTJlMThhYjJkZjU0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NTI0NDE3MjUsImNzcmYiOiIwYTdjNjNmNy01NGFjLTRhYzEtOGE5NC1jN2IxYWRmNWQ3YzMiLCJleHAiOjE3NTI0NDUzMjV9.KT44vE9gA8km0gi3DHXzYmPEZGLnj1HxvyHvcibN57Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"john\",\r\n  \"email\": \"dummytest85033@gmail.com\",\r\n  \"password\": \"john123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/client/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"client",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "client login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc1MjQ0MTcyNSwianRpIjoiYzkxNDc3NGEtM2RjNi00N2I5LThjYmEtOTJlMThhYjJkZjU0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NTI0NDE3MjUsImNzcmYiOiIwYTdjNjNmNy01NGFjLTRhYzEtOGE5NC1jN2IxYWRmNWQ3YzMiLCJleHAiOjE3NTI0NDUzMjV9.KT44vE9gA8km0gi3DHXzYmPEZGLnj1HxvyHvcibN57Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"john\",\r\n  \"password\": \"john123\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/client/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"client",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list files",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc1MjQ0MjE2NCwianRpIjoiYzRjODVhNTctZjY1NC00ZTdiLWIxOWEtOTA2ZDg2OTZhMGY2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjIiLCJuYmYiOjE3NTI0NDIxNjQsImNzcmYiOiIwNWY3ODA1My05ZDJlLTRlNjEtOTYyZC1kYzgyNDkyOTY3NTUiLCJleHAiOjE3NTI0NDU3NjR9.GD-J3NPjA38nyXcuDDT0-Pj1_lJey1I7ZE-ZFOf-cvM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"john\",\r\n  \"password\": \"john123\"\r\n}\r\n\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/client/files",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"client",
+						"files"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "download files",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc1MjQ0MjE2NCwianRpIjoiYzRjODVhNTctZjY1NC00ZTdiLWIxOWEtOTA2ZDg2OTZhMGY2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjIiLCJuYmYiOjE3NTI0NDIxNjQsImNzcmYiOiIwNWY3ODA1My05ZDJlLTRlNjEtOTYyZC1kYzgyNDkyOTY3NTUiLCJleHAiOjE3NTI0NDU3NjR9.GD-J3NPjA38nyXcuDDT0-Pj1_lJey1I7ZE-ZFOf-cvM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/client/download-file/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"client",
+						"download-file",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
