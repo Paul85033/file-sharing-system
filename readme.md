@@ -1,6 +1,6 @@
 Simple and secure file sharing system using Flask and SQLAlchemy.
 
-## Prerequisites: for running:
+## Prerequisites for running:
 
 1. Create .env file with the following :
 
